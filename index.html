@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Focus Timer</title>
+	</head>
+	<body>
+		<div id="app">
+			<button id="toggle-mode">
+				<span class="sr-only">On/Off Theme Mode</span>
+				<i class="ph ph-sun"></i>
+				<i class="ph ph-moon"></i>
+			</button>
+
+			<section id="timer" class="flex">
+				<span id="minutes">00</span>
+				<span>:</span>
+				<span id="seconds">00</span>
+			</section>
+
+			<section id="controls" class="flex">
+				<button class="ph ph-play-circle">
+					<span class="sr-only">Start</span>
+				</button>
+				<button class="ph ph-pause-circle">
+					<span class="sr-only">Pause</span>
+				</button>
+				<button class="ph ph-timer secondary">
+					<span class="sr-only">Reset</span>
+				</button>
+				<button class="ph ph-stop-circle secondary">
+					<span class="sr-only">Stop</span>
+				</button>
+				<button class="ph ph-speaker-none secondary">
+					<span class="sr-only">Mute</span>
+				</button>
+				<button class="ph ph-speaker-high">
+					<span class="sr-only">Unmute</span>
+				</button>
+			</section>
+		</div>
+		<script src="https://unpkg.com/@phosphor-icons/web"></script>
+		<script type="module" src="./js/main.js"></script>
+	</body>
+</html>
