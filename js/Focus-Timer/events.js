@@ -1,4 +1,5 @@
 import { controls } from "./elements";
+import * as actions from "./actions";
 
 export function registerControls() {
 	controls.addEventListener("click", (event) => {
@@ -6,5 +7,6 @@ export function registerControls() {
 		if (action === undefined) {
 			return;
 		}
+        
 	});
 }
