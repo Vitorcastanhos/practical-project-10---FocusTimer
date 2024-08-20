@@ -79,6 +79,7 @@ button {
 	color: var(--button-secondary);
 }
 
+/* controls */
 .running .ph-play-circle,
 .running .ph-timer,
 .music-on .ph-speaker-none,
