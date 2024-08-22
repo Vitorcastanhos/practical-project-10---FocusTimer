@@ -7,7 +7,7 @@ export function toggleRunning() {
 	state.isRunning = document.documentElement.classList.toggle("running");
 
 	timer.countdown();
-	
+
 	sounds.buttonPressAudio.play();
 }
 
@@ -30,7 +30,7 @@ export function toggleMusic() {
 
 	if (state.isMute) {
 		sounds.timerStartAudio.play();
-	} else {
-		sounds.timerStartAudio.pause();
+		return;
 	}
+	sounds.timerStartAudio.pause();
 }
